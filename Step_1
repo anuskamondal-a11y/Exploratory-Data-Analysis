@@ -1,0 +1,14 @@
+#Importing the required libraries
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+
+# Understanding dataset structure (rows, columns, data types)
+#Reading the csv
+data=gpd.read_file("/content/volcano-events (1).csv")
+#show the first 5 columns
+print(data.head())
+#show the first 5 columns
+print(data.tail())
