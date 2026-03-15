@@ -1,0 +1,5 @@
+#2. Display and drop the missing values and display the info of the data
+print(data.isnull().sum())
+data.dropna()
+#datatypes
+print(data.info())
