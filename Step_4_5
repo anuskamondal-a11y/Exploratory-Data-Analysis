@@ -1,0 +1,11 @@
+# 4. Duplicate value handling
+duplicate=data.duplicated()
+print("Duplicate values=",duplicate)
+
+# 5. Correlation Matrix
+data['Deaths'] = pd.to_numeric(data['Deaths'], errors='coerce')
+data['Houses Destroyed'] = pd.to_numeric(data['Houses Destroyed'], errors='coerce')
+
+correlation_matrix = data[['Deaths', 'Houses Destroyed']].corr()
+
+print("Correlation Matrix:\n", correlation_matrix)
