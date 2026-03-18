@@ -1,0 +1,7 @@
+# 3. Summary statistics (mean, median, mode, standard deviation, etc.)
+#shape of the data
+print("Shape of the data: ", data.shape)
+#summary statistics
+print("Data description:", data.describe())
+#display the columns
+print("The columns present in the dataset: ", data.columns)
