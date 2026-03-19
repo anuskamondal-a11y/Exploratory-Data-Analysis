@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#Histogram (Deaths distribution)
+plt.figure(figsize=(6,4))
+plt.hist(data["Deaths"], bins=10, edgecolor="black")
+plt.title("Histogram showing deaths")
+plt.xlabel("Deaths")
+plt.ylabel("Counts")
+plt.show()
