@@ -1,0 +1,10 @@
+#Bar Chart (Top 10 volcanoes by deaths)
+top_deaths = data.sort_values("Deaths", ascending=False).head(10)
+
+plt.figure(figsize=(8,5))
+plt.bar(top_deaths["Name"], top_deaths["Deaths"])
+plt.title("Top 10 Deadliest Volcano Events")
+plt.xlabel("Volcano Name")
+plt.ylabel("Deaths")
+plt.xticks(rotation=45)
+plt.show()
