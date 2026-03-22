@@ -1,0 +1,5 @@
+#Correlation Heatmap
+plt.figure(figsize=(7,4))
+sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm")
+plt.title("Correlation Heatmap")
+plt.show()
