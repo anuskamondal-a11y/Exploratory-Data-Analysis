@@ -1,0 +1,5 @@
+#Box Plot (Deaths distribution)
+plt.figure(figsize=(5,4))
+sns.boxplot(y=data["Deaths"])
+plt.title("Boxplot of Deaths")
+plt.show()
