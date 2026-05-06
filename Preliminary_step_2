@@ -1,0 +1,5 @@
+#Scaling
+from sklearn.preprocessing import StandardScaler
+scaler=StandardScaler()
+data["Country"] = scaler.fit_transform(data[["Country"]])
+print(data["Country"])
